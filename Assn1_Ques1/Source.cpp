@@ -23,8 +23,7 @@ int main()
 	cout << "Sub-total      $   " << subTotal << "\n";
 	cout << "Tip at 20%     $   " << tip << "\n";
 	cout << "Total Bill     $   " << total << "\n";;
-	// Lets say that I ad some things here. Lets check out the functionality of git
-	// in Visual Studio!
+		
 
 	return 0;
 }
