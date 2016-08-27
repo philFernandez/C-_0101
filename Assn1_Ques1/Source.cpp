@@ -21,7 +21,7 @@ int main()
 	cout << "Bill           $   " << restaurantBill << "\n";
 	cout << "Tax at 10.5%   $   " << tax << "\n";
 	cout << "Sub-total      $   " << subTotal << "\n";
-	cout << "Tip at 20%     $   " << tip << "\n";
+	cout << "Tip at 20%     $   " << tip << "\n\n";
 	cout << "Total Bill     $   " << total << "\n";;
 		
 
