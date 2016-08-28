@@ -1,11 +1,11 @@
 #include <iostream>
 #include <iomanip>
-#include <locale>
+
 using namespace std;
 
 int main()
 {
-	// Sets all decimal numbers to be rounded to two decimals
+	// Sets all decimal numbers to be rounded to two decimal places.
 	std::cout << std::setprecision(2) << std::fixed;
 	
 	// Named constants for tip and tax rates.
@@ -18,11 +18,12 @@ int main()
 		tip = subTotal * TIP_PERCENTAGE,
 		total = subTotal + tip;
 
+	// The use of setw aligns the decimals for the output of tax and tip.
 	cout << "Bill           $   " << restaurantBill << "\n";
-	cout << "Tax at 10.5%   $   " << tax << "\n";
+	cout << "Tax at 10.5%   $   " << setw(5) << tax << "\n";
 	cout << "Sub-total      $   " << subTotal << "\n";
-	cout << "Tip at 20%     $   " << tip << "\n\n";
-	cout << "Total Bill     $   " << total << "\n";;
+	cout << "Tip at 20%     $   " << setw(5) << tip << "\n\n";
+	cout << "Total Bill     $   " << total << "\n";
 		
 
 	return 0;
